@@ -26,4 +26,18 @@ addAndHandle(18, 2, function (num) {
 });
 ///////////////////////////////////////
 ///////////////////////////////////////
-//
+// 29. The "unknown" Type
+// 30. The "never" Type
+var userInput;
+var userName;
+userInput = 5;
+userInput = "Max";
+// tengo q hacer el check para asignar algo de tipo unknown a algo q si tiene tipo
+if (typeof userInput === "string") {
+    userName = userInput;
+}
+function generateError(message, code) {
+    throw { message: message, errorCode: code };
+    // while (true) {}
+}
+generateError("An error occurred!", 500);
